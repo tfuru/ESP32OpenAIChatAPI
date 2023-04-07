@@ -1,0 +1,26 @@
+{
+    "name": "ESP32OpenAIChatAPI",
+    "description": "ESP32 ChatGPT API (GPT-3.5)",
+    "keywords": "ESP32, ChatGPT, AI",
+    "authors": [
+        {
+            "name": "t_furu",
+            "email": "t_furu@tf-web.jp",
+            "url": "https://github.com/tfuru/ESP32OpenAIChatAPI",
+            "maintainer": true
+        }
+    ],
+    "repository": {
+        "type": "git",
+         "url": "https://github.com/tfuru/ESP32OpenAIChatAPI"
+    },
+    "version": "0.1",
+    "homepage": "https://github.com/tfuru/ESP32OpenAIChatAPI",
+    "frameworks": "Arduino",
+    "examples": [
+        "examples/*/*.ino"
+    ],
+	"build": {
+		"libLDFMode": "deep"
+	}
+}
