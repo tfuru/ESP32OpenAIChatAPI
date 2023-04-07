@@ -1,6 +1,6 @@
 /*
-  AudioFileSourceVoicevox
-  Connect to a VOICEVOX service
+  OpenAIChatAPIClient
+  Connect to a OpenAI Chat API service
   
   Copyright (C) 2023  t_furu
 

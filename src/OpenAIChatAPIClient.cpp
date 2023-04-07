@@ -1,6 +1,5 @@
 #include "OpenAIChatAPIClient.h"
 
-
 OpenAIChatAPIClient:: OpenAIChatAPIClient(const char* key): openaiKey(key) {
 
   http.setFollowRedirects(HTTPC_STRICT_FOLLOW_REDIRECTS); 
