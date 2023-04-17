@@ -20,6 +20,10 @@
 
 #include <Arduino.h>
 #include <HTTPClient.h>
+
+#include <json11.hpp>
+using namespace json11;
+
 #include "OpenAIChatAPIClientRequest.h"
 
 #ifndef __OPENAI_CHAT_API_CLIENT_H_
@@ -29,17 +33,17 @@ class OpenAIChatAPIClient {
     public:
         OpenAIChatAPIClient(const char* key);
         ~OpenAIChatAPIClient();
-        String* chat(const char* prompt);
+        String chat(const char* prompt, const char* system = "");
     private:
         String model = "gpt-3.5-turbo";
         String openaiKey = "sk-";
         String endpoint = "https://api.openai.com/v1/chat/completions";
         String response = "";
+        String content = "";
 
         OpenAIChatAPIClientRequest* request;
 
-        WiFiClient client;
-        HTTPClient http;        
+        HTTPClient http;
 };
 
 #endif // __OPENAI_CHAT_API_CLIENT_H_
